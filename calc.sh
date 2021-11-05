@@ -12,4 +12,8 @@ case $OPERATE in
     echo "This is your sum:"
     expr $NUM_ONE + $NUM_TWO
     ;;
+    "Subtract"|"subtract")
+    echo "This is your difference:"
+    expr $NUM_ONE - $NUM_TWO
+    ;;
 esac
