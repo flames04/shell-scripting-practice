@@ -1,4 +1,7 @@
 echo "Hi! This is my Shell Scripting Calculator."
+
+while true 
+do
 echo "What do you want to do? 
         Add 
         Subtract"
@@ -19,5 +22,7 @@ case $OPERATE in
     expr $NUM_ONE - $NUM_TWO
     ;;
     *)
-    echo "Sorry, that's not part of my functions."
+    echo "Sorry, that's not part of my functions. Please choose again"
 esac
+
+done
