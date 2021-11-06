@@ -23,11 +23,12 @@ case $OPERATE in
     echo "This is your difference:"
     expr $NUM_ONE - $NUM_TWO
     ;;
+    "Exit"|"exit")
+    exit
+    ;;
     *)
     echo "Sorry, that's not part of my functions. Please choose again"
     ;;
-    "Exit"|"exit")
-    exit
 esac
 
 done
