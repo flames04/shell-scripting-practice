@@ -1,5 +1,7 @@
 #! /usr/bin/env bash
-echo "Hi! This is my Shell Scripting Calculator."
+echo "This is my Shell Scripting Calculator. What's your name?"
+read NAME
+echo "Hi $NAME! Let's get started"
 
 while true 
 do
@@ -40,10 +42,11 @@ case $OPERATE in
     expr $NUM_ONE / $NUM_TWO
     ;;
     "Exit"|"exit")
+    echo "Awww, okay. Bye $NAME!"
     exit
     ;;
     *)
-    echo "Sorry, that's not part of my functions. Please choose again"
+    echo "Sorry, that's not part of my functions. Please choose again or check for typos."
     ;;
 esac
 
