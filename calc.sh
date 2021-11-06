@@ -32,6 +32,13 @@ case $OPERATE in
     echo "This is your product:"
     expr $NUM_ONE "*" $NUM_TWO
     ;;
+    "Divide"|"divide")
+    echo "Enter your numbers"
+    read NUM_ONE
+    read NUM_TWO
+    echo "This is your quotient:"
+    expr $NUM_ONE / $NUM_TWO
+    ;;
     "Exit"|"exit")
     exit
     ;;
