@@ -1,10 +1,12 @@
+#! /usr/bin/env bash
 echo "Hi! This is my Shell Scripting Calculator."
 
 while true 
 do
 echo "What do you want to do? 
         Add 
-        Subtract"
+        Subtract
+        Exit"
 read OPERATE
 
 case $OPERATE in
@@ -23,6 +25,9 @@ case $OPERATE in
     ;;
     *)
     echo "Sorry, that's not part of my functions. Please choose again"
+    ;;
+    "Exit"|"exit")
+    exit
 esac
 
 done
